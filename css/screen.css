@@ -1,0 +1,547 @@
+@charset "UTF-8";
+@import url(fonts/icomoon/style.css);
+
+html, body, div, span, h3, p, a, i, ul, li, fieldset, form, label, legend {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html {
+    line-height: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'Expressway';
+    src: url("fonts/expressway/expressway_rg-webfont.eot");
+    src: url("fonts/expressway/expressway_rg-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/expressway/expressway_rg-webfont.woff") format("woff"), url("fonts/expressway/expressway_rg-webfont.ttf") format("truetype"), url("fonts/expressway/expressway_rg-webfont.svg#ExpresswayRgRegular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Expressway';
+    src: url("fonts/expressway/expressway_rg_it-webfont.eot");
+    src: url("fonts/expressway/expressway_rg_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/expressway/expressway_rg_it-webfont.woff") format("woff"), url("fonts/expressway/expressway_rg_it-webfont.ttf") format("truetype"), url("fonts/expressway/expressway_rg_it-webfont.svg#ExpresswayRgItalic") format("svg");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Expressway';
+    src: url("fonts/expressway/expressway_bd-webfont.eot");
+    src: url("fonts/expressway/expressway_bd-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/expressway/expressway_bd-webfont.woff") format("woff"), url("fonts/expressway/expressway_bd-webfont.ttf") format("truetype"), url("fonts/expressway/expressway_bd-webfont.svg#ExpresswayRgBold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Expressway';
+    src: url("fonts/expressway/expressway_bd_it-webfont.eot");
+    src: url("fonts/expressway/expressway_bd_it-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/expressway/expressway_bd_it-webfont.woff") format("woff"), url("fonts/expressway/expressway_bd_it-webfont.ttf") format("truetype"), url("fonts/expressway/expressway_bd_it-webfont.svg#ExpresswayRgBoldItalic") format("svg");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Expressway';
+    src: url("fonts/expressway/expressway_lt-webfont.eot");
+    src: url("fonts/expressway/expressway_lt-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/expressway/expressway_lt-webfont.woff") format("woff"), url("fonts/expressway/expressway_lt-webfont.ttf") format("truetype"), url("fonts/expressway/expressway_lt-webfont.svg#ExpresswayLtRegular") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Expressway';
+    src: url("fonts/expressway/expressway_xl-webfont.eot");
+    src: url("fonts/expressway/expressway_xl-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/expressway/expressway_xl-webfont.woff") format("woff"), url("fonts/expressway/expressway_xl-webfont.ttf") format("truetype"), url("fonts/expressway/expressway_xl-webfont.svg#ExpresswayXlRegular") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+
+.icomoon {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    width: 1em;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #b73568;
+    font: 400 14px/1.5 "Expressway", Arial, Verdana, Geneva, Helvetica, sans-serif;
+    min-height: 100%;
+    min-width: 768px;
+    position: relative;
+}
+
+body:before {
+    content: "";
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+
+body.cv {
+    background: #d8d8d8;
+}
+
+body.cv::before {
+    display: block;
+    background: url(img/fonds/accueil-nb.png) no-repeat 86% 38em;
+    background-blend-mode: multiply;
+    mix-blend-mode: multiply;
+    border: 1px solid transparent;
+}
+
+body.ressource.cv::before {
+    display: none;
+    background: none;
+}
+
+#fancybox-content {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    color: #6d72af;
+    cursor: pointer;
+}
+
+a:focus {
+    opacity: 0.75;
+}
+
+input,
+select,
+textarea {
+    font: 400 14px "Expressway", Arial, Verdana, Geneva, Helvetica, sans-serif;
+}
+
+[type=button],
+[type=submit] {
+    background: none;
+    background-color: #6d72af;
+    border: none;
+    border-radius: 3.14286em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    height: 3.14286em;
+    line-height: 1;
+    padding: 0.975em 0.75em;
+    text-align: center;
+    text-decoration: none;
+}
+
+fieldset {
+    background-color: rgba(0, 0, 0, 0.08);
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+fieldset legend {
+    display: block;
+    margin-bottom: 2em;
+    opacity: 0.54;
+    position: relative;
+    text-transform: uppercase;
+    top: 1.5em;
+    width: 100%;
+}
+
+label {
+    cursor: pointer;
+    font-size: 0.85714em;
+    float: left;
+    /*margin-top: 1em;*/
+    /*text-transform: uppercase;*/
+    width: 15em;
+}
+
+label::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+input,
+textarea,
+select {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0.5em 1em;
+    width: 64.5%;
+}
+
+input.submit {
+    width: 15em;
+}
+
+input[type=hidden] {
+    display: none;
+}
+
+textarea {
+    min-height: 10em;
+}
+
+.checkbox::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.checkbox [type=checkbox] {
+    float: left;
+    margin: 0.375rem 0 1em;
+    text-align: left;
+    width: 2rem;
+}
+
+.checkbox label {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.checkbox label + [type=checkbox] {
+    float: none;
+}
+
+form p::after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+[class*="form__"] p,
+[class*="form__"] div {
+    margin: 0 0 1em;
+}
+
+.form__fieldset {
+    clear: both;
+    margin: 0 0 2em;
+}
+
+label,
+.form__label {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.form__label {
+    cursor: pointer;
+    float: left;
+    font-size: 0.85714em;
+    /*text-transform: uppercase;*/
+    width: 15em;
+}
+
+.form__legend {
+    background: #dddddd;
+    color: #888888;
+    font-size: 0.875em;
+    font-weight: 700;
+    margin-bottom: 0;
+    opacity: 1;
+    padding: 0.25em 1em;
+    text-transform: uppercase;
+    top: 0;
+    width: auto;
+}
+
+.form__fieldset .form__fieldset .form__legend {
+    background-color: #aaaaaa;
+    color: #ffffff;
+}
+
+p.form__checkbox {
+    display: inline-block;
+    float: left;
+}
+
+.form__checkbox input {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+
+.form__checkbox-list {
+    float: left;
+    list-style: none;
+}
+
+.form__checkbox-list li input {
+    display: inline-block;
+    float: none;
+    height: auto;
+    width: auto;
+}
+
+.form__checkbox-list li label {
+    width: auto;
+    float: none;
+}
+
+.content__validate {
+    margin: 0 auto !important;
+    top: 0.5rem !important;
+}
+
+.message-erreur-validation,
+body.ressource .error,
+body.cv .error {
+    color: #ff4e00;
+    margin-left: 13em;
+    margin-top: 0.5em;
+}
+
+.message-erreur-validation{
+    display: none;
+}
+
+    /* ************* saisie_cv******* */
+
+body.cv .ui-accordion .ui-accordion-content textarea {
+    width: 100%;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu {
+    padding: 0.5em 1em 0;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu textarea {
+    display: inline;
+    width: 64.5%;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu:last-of-type {
+    margin-top: 3em;
+    padding: 0 4em;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu:last-of-type input[type='text'],
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu:last-of-type select {
+    display: inline;
+    width: 75%;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu:last-of-type textarea {
+    display: inline;
+    width: 75%;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu:last-of-type fieldset {
+    margin: 0 2em 2em 0;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu:last-of-type .validation .ajouter {
+    margin-right: 2em;
+}
+
+body.cv .ui-accordion .ui-accordion-content .cv__item__contenu select.selectbox__date__annee, body.cv .ui-accordion .ui-accordion-content .cv__item__contenu select.selectbox__date__mois, body.cv .ui-accordion .ui-accordion-content .cv__item__contenu select.selectbox__date__jour {
+    display: inline;
+    margin-right: 1em;
+    width: 12em;
+}
+
+/** mon compte **/
+
+body.ressource.cv #valider-formulaire {
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+body.ressource #valider-formulaire {
+    border-radius: 0;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 100%;
+    padding: 1rem;
+    width: 100%;
+}
+
+body.ressource #valider-formulaire {
+    background-color: transparent;
+}
+
+header {
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+    white-space: nowrap;
+}
+
+header a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header a img {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo--men {
+    /*margin-right: 1em;*/
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.intro_saisie_cv {
+    background-color: #ffffff;
+    padding: 1em;
+}
+
+.cur-help {
+    cursor: help;
+}
+
+#saisie_cv .submit {
+    margin: 1.42857em 0;
+}
+
+body.cv .ui-accordion .ui-accordion-header,
+body.cv .ui-accordion .ui-accordion-content {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    position: static;
+}
+
+body.cv .ui-accordion .ui-accordion-header {
+    background-image: none;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    font-size: 1.57143em;
+    font-weight: 400;
+    margin: 1.27273em 0 0;
+    padding: 0.81818em 1.31818em;
+    position: relative;
+}
+
+body.cv .ui-accordion .ui-accordion-header::before {
+    content: '\2295';
+    font-family: 'Icomoon';
+    position: absolute;
+    right: 1.31818em;
+}
+
+body.cv .ui-accordion .ui-accordion-header.ui-state-active::before {
+    content: '\229d';
+}
+
+body.cv .ui-accordion .ui-accordion-header.ui-state-active::after {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    content: '';
+    left: 1.31818em;
+    position: absolute;
+    right: 1.31818em;
+}
+
+body.cv .ui-accordion .ui-accordion-header .ui-icon {
+    display: none;
+}
+
+body.cv .ui-accordion .ui-accordion-content {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.14286em;
+    padding-bottom: 2em;
+}
+
+body.cv .ui-accordion .cv__item__contenu span.infos {
+    margin-right: 2em;
+}
+
+#valider-formulaire {
+    margin-top: 1rem;
+    position: relative;
+    text-align: center;
+    top: 2rem;
+}
+
+.form__input,
+.form__checkbox.form__label {
+    clear: both;
+}
+
+fieldset.form__fieldset .validation {
+    margin-top: .5em;
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+}
+
+fieldset.form__fieldset .validation input {
+    background: #333;
+    height: 1em;
+    line-height: 0em;
+    margin: 0 0 .1em .5em;
+    width: 7em;
+}
+
+fieldset.form__fieldset .validation input.reset, fieldset.form__fieldset .validation input.supprimer {
+    background: #cc2117;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 0;
+}
